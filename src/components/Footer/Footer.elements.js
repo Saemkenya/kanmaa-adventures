@@ -25,12 +25,12 @@ color: #fff;
 export const FooterSubHeading = styled.p`
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, Helvetica, sans-serif, sans-serif;
 margin-bottom: 24px;
-font-size: 24px;
+font-size: 20px;
 `;
 
 export const FooterSubText = styled.p`
 margin-bottom: 24px;
-font-size: 20px;
+font-size: 16px;
 `;
 
 export const Form = styled.form`
@@ -50,7 +50,7 @@ border-radius: 2px;
 margin-right: 10px;
 outline: none;
 border: none;
-font-size: 16px;
+font-size: 12px;
 border: 1px solid #fff;
 
 &::placeholder {
@@ -101,6 +101,7 @@ color: #fff;
 
 export const FooterLinkTitle = styled.h2`
 margin-bottom: 16px;
+color: orange;
 `;
 
 export const FooterLink = styled(Link)`
@@ -109,7 +110,7 @@ text-decoration: none;
 margin-bottom: 0.5rem;
 
 &:hover {
-    color: #0467fb;
+    color: orange;
     transition: 0.3s ease-out;
 }
 `;
@@ -161,6 +162,18 @@ width: 240px;
 
 export const SocialIconLink = styled.a`
 color: #fff;
-font-size: 24px;
+font-size: 20px;
 `;
 
+
+export const FirstName = styled.a`
+color: orange;
+font-size: 30px;
+padding-left: 10px;
+`;
+
+export const SecondName = styled.a`
+color: green;
+font-size: 30px;
+padding-left: 10px;
+`;

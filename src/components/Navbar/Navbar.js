@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 import { 
     Nav, 
     NavLogo, 
-    NavIcon, 
     NavbarContainer, 
     MobileIcon,
     NavMenu,
@@ -10,10 +9,14 @@ import {
     NavLinks,
     NavItemBtn,
     NavBtnLink,
+    FirstName,
+    SecondName,
+    SecondNamePart,
 } from "./Navbar.elements";
 import { FaTimes, FaBars } from "react-icons/fa";
 import { IconContext } from 'react-icons/lib'
 import { Button } from '../../globalStyles';
+import Logo from '../../images/Logo';
 
 const Navbar = () => {
     const [click, setClick] = useState(false);
@@ -36,34 +39,36 @@ const Navbar = () => {
 
     return (
         <>
-        <IconContext.Provider value={{ color: '#fff' }}>
+        <IconContext.Provider value={{ color: '#00ff' }}>
           <Nav>
               <NavbarContainer>
                   <NavLogo to="/">
-                      <NavIcon />
-                      Kanmaa Adventures
+                      <Logo width={100} height={100} color="#0000ff" fill="ff000"/>
+                      <FirstName>KANMAA</FirstName>
+                      <SecondName>ADV</SecondName>
+                      <SecondNamePart>ENTURES</SecondNamePart>
                   </NavLogo>
                   <MobileIcon onClick={ handleClick }>
                       {click ? <FaTimes /> : <FaBars />}
                   </MobileIcon>
                   <NavMenu onClick={ handleClick } click={click}>
                       <NavItem>
-                          <NavLinks to='/'>
+                          <NavLinks exact to='/'>
                               Home
                           </NavLinks>
                       </NavItem>
                       <NavItem>
-                          <NavLinks to='/hotel'>
+                          <NavLinks to='/places'>
                               Places To Stay
                           </NavLinks>
                       </NavItem>
                       <NavItem>
-                          <NavLinks to='/cottages'>
+                          <NavLinks to='/experiences'>
                               Experiences
                           </NavLinks>
                       </NavItem>
                       <NavItem>
-                          <NavLinks to='/offers'>
+                          <NavLinks to='/host'>
                               Become A Host
                           </NavLinks>
                       </NavItem>

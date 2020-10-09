@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { FaMagento } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { Container } from "../../globalStyles";
 
 export const Nav = styled.nav`
@@ -9,7 +9,7 @@ height: 80px;
 display: flex;
 justify-content: center;
 align-items: center;
-font-size: 1.2rem;
+font-size: 0.8rem;
 position: sticky;
 top: 0;
 z-index: 999;
@@ -28,7 +28,7 @@ color: #fff;
 justify-self: flex-start;
 cursor: pointer;
 text-decoration: none;
-font-size: 2rem;
+font-size: 1.2rem;
 display: flex;
 align-items: center;
 `;
@@ -46,7 +46,7 @@ display: none;
     top: 0;
     right: 0;
     transform: translate(-100%, 60%);
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     cursor: pointer;
 }
 `;
@@ -76,7 +76,8 @@ height: 80px;
 border-bottom: 2px solid transparent;
 
 &:hover {
-    border-bottom: 2px solid #4b59f7;
+    border-bottom: 5px solid orange;
+    color: green;
 }
 
 @media screen and (max-width: 960px) {
@@ -88,13 +89,17 @@ border-bottom: 2px solid transparent;
 }
 `;
 
-export const NavLinks  = styled(Link)`
+export const NavLinks  = styled(NavLink)`
 color: #fff;
 display: flex;
 align-items: center;
 text-decoration: none;
 padding: 0.5rem 1rem;
 height: 100%;
+
+&.active {
+    color: orange;
+}
 
 @media screen and (max-width: 960px) {
     text-align: center;
@@ -130,3 +135,25 @@ width: 100%;
 border: none;
 outline: none;
 `;
+
+export const FirstName = styled.a`
+color: orange;
+font-size: 30px;
+padding-left: 10px;
+`;
+
+export const SecondName = styled.a`
+color: green;
+font-size: 30px;
+padding-left: 10px;
+`;
+
+export const SecondNamePart = styled.a`
+color: green;
+font-size: 30px;
+
+@media screen and (max-width: 820px) {
+    display: none;
+}
+`;
+
