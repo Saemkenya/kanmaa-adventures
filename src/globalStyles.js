@@ -26,18 +26,20 @@ padding-left: 50px;
 
 export const Button = styled.button`
 border-radius: 4px;
-background: ${({primary}) => (primary ? '#4859F7' : '#0467F8')};
+background: ${({primary}) => (primary ? 'orange' : 'green')};
 white-space: nowrap;
 padding: ${({big}) => (big ? '12px' : '16px')};
+color: ${({primary}) => (primary ? '#000' : '#fff')};
+font-size: ${({ fontBig }) => (fontBig ? '24px' : '16px')};
 outline: none;
 border: none;
 cursor: pointer;
 
-&:hover {
+&::hover {
     transition: all 0.3s ease-out;
     background: #fff;
     background: ${({primary}) => (primary? '#0467FB' : '#4B59F7')};
-}
+};
 
 @media screen and (max-width: 960px) {
     width: 100%

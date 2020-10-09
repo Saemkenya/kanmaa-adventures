@@ -1,6 +1,8 @@
 import React from 'react';
 import { FaInstagram, FaFacebook, FaYoutube, FaLinkedin, FaTwitter } from 'react-icons/fa'; 
 import { Button } from '../../globalStyles';
+import Logo from '../../images/Logo';
+import { FirstName, SecondName } from '../Footer/Footer.elements';
 import { 
     FooterContainer, 
     FooterSubHeading, 
@@ -19,7 +21,6 @@ import {
     WebsiteRights,
     SocialIcons,
     SocialIconLink,
-    SocialIcon
 } from "./Footer.elements";
 
 function Footer() {
@@ -27,10 +28,10 @@ function Footer() {
         <FooterContainer>
             <FooterSubscription>
                 <FooterSubHeading>
-                    Join our exclusive mailing list to receive news about booking offers and trends.
+                    Access your profile by logging in.
                 </FooterSubHeading>
                 <FooterSubText>
-                    You can unsubscribe at any time.
+                    You can sign up for a new account any time by clicking SignUp.
                 </FooterSubText>
                 <Form>
                     <FormInput 
@@ -38,7 +39,12 @@ function Footer() {
                     type="email" 
                     placeholder="Your Email Address" 
                     />
-                        <Button fontBig>Subscribe</Button>
+                    <FormInput 
+                    name="password" 
+                    type="password" 
+                    placeholder="Your Password" 
+                    />
+                        <Button fontBig>Login</Button>
                 </Form>
             </FooterSubscription>
             <FooterLinksContainer>
@@ -86,25 +92,27 @@ function Footer() {
             <SocialMedia>
                 <SocialMediaWrap>
                     <SocialLogo to='/'>
-                        <SocialIcon />
-                        Kanmaa Adventures
+                        <Logo height={60} width={60} />
+                        <FirstName>Kanmaa</FirstName>
+                        <SecondName>Adventures</SecondName>
                     </SocialLogo>
-                    <WebsiteRights>Kanmaa Adventures © 2020</WebsiteRights>
+                    <WebsiteRights>
+                        Kanmaa Adventures © 2020</WebsiteRights>
                     <SocialIcons>
                         <SocialIconLink href='/' target="_blank" aria-label="Facebook">
-                            <FaFacebook />
+                            <FaFacebook color={"orange"}/>
                         </SocialIconLink>
                         <SocialIconLink href='/' target="_blank" aria-label="Instagram">
-                            <FaInstagram />
+                            <FaInstagram color={"green"}/>
                         </SocialIconLink>
                         <SocialIconLink href='/' target="_blank" aria-label="Youtube" rel="noopener" noreferrer>
-                            <FaYoutube />
+                            <FaYoutube color={"orange"}/>
                         </SocialIconLink>
                         <SocialIconLink href='/' target="_blank" aria-label="Twitter">
-                            <FaTwitter />
+                            <FaTwitter color={"green"}/>
                         </SocialIconLink>
                         <SocialIconLink href='/' target="_blank" aria-label="Linkedin">
-                            <FaLinkedin />
+                            <FaLinkedin color={"orange"}/>
                         </SocialIconLink>
                     </SocialIcons>
                 </SocialMediaWrap>
