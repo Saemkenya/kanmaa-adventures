@@ -117,11 +117,12 @@ In the project directory, you can run:
 
 ## 13. Experience Page.
     Comprising 2 reusable sections of 2 Info-Section components with various data inputs from the experience data source component.
-
+    Components to showcase online experience and physical experiences.
 
 ## 14. Host Page Data.
     The default data fetching module for host page module component. Dummy data in two sections to feed to the reusable Info-section module for the host page.
 
 ## 15. Host Page.
     Comprising 2 reusable sections of 2 Info-Section components with various data inputs from the host data source component.
+    Components to showcase hotel hosting and home hosting.
 
