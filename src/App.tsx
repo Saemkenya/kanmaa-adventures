@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Footer, Navbar } from './components';
 import ScrollToTop from './components/ScrollToTop';
 import GlobalStyle from "./globalStyles";
-import { Home } from "./pages";
+import { Home, Experiences, Host } from "./pages";
 
 
 function App() {
@@ -14,6 +14,8 @@ function App() {
     <Navbar />
     <Switch>
       <Route path="/" exact component={Home} />
+      <Route path="/experiences" exact component={Experiences} />
+      <Route path="/host" exact component={Host} />
     </Switch>
     <Footer />
     </Router>

@@ -1,5 +1,6 @@
-Kanmaa Adventures responsive web client and mobile web client.
+# Kanmaa Adventures responsive web client and mobile web client.
 Styling with react styled components
+Functional components using react hooks
 
 ## Available Scripts
 
@@ -105,9 +106,23 @@ In the project directory, you can run:
     Imported from the App.tsx module to aid in reversing the paging of the displayed document on page navigation.
 
 ## 10. Home Page Data.
-    The default data fetching module for home page module component. Dummy data in five sections to feed to the recyclable Info-section module for the home page.
+    The default data fetching module for home page module component. Dummy data in five sections to feed to the reusable Info-section module for the home page.
 
 ## 11. Home Page, Main Landing Page.
-    Comprising 6 recyclable sections of 5 Info-Section components with various data inputs from the home data source component. 
+    Comprising 6 reusable sections of 5 Info-Section components with various data inputs from the home data source component. 
     Also has 1 Pricing component with the default dummy data from the pricing component. 
+
+## 12. Experience Page Data.
+    The default data fetching module for experiences page module component. Dummy data in two sections to feed to the reusable Info-section module for the experience page.
+
+## 13. Experience Page.
+    Comprising 2 reusable sections of 2 Info-Section components with various data inputs from the experience data source component.
+    Components to showcase online experience and physical experiences.
+
+## 14. Host Page Data.
+    The default data fetching module for host page module component. Dummy data in two sections to feed to the reusable Info-section module for the host page.
+
+## 15. Host Page.
+    Comprising 2 reusable sections of 2 Info-Section components with various data inputs from the host data source component.
+    Components to showcase hotel hosting and home hosting.
 
