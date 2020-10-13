@@ -1,5 +1,6 @@
-Kanmaa Adventures responsive web client and mobile web client.
+# Kanmaa Adventures responsive web client and mobile web client.
 Styling with react styled components
+Functional components using react hooks
 
 ## Available Scripts
 
