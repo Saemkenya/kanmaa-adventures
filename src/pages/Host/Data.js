@@ -25,8 +25,24 @@ export const hostObjTwo = {
     headline: 'Home Hosting', 
     lightText: false, 
     topLine: 'Easy Home Hosting',
-    img: require('../../images/travel.svg'),
+    img: require('../../images/bed.svg'),
     alt: 'host-img',
     start: 'true'
+}
+
+export const hostObjThree = {
+    primary: true, 
+    lightBg: false, 
+    imgStart: 'start', 
+    lightTopLine: true, 
+    lightTextDesc: true, 
+    buttonLabel: 'Host In A Cottage', 
+    description: 'Rent out your outdoor camp-sites and hill-side cottage and start generating revenue from our cluster of clients',
+    headline: 'OutDoor Camping', 
+    lightText: true, 
+    topLine: 'Outdoor Camping Sites',
+    img: require('../../images/tent.svg'),
+    alt: 'host-img',
+    start: ''
 }
 
