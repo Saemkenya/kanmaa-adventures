@@ -1,6 +1,5 @@
 import styled, { createGlobalStyle } from "styled-components";
 
-
 export const FormContentRight = styled.div`
 border-radius: 0 10px 10px 0;
 position: relative;

@@ -120,9 +120,49 @@ In the project directory, you can run:
     Components to showcase online experience and physical experiences.
 
 ## 14. Host Page Data.
-    The default data fetching module for host page module component. Dummy data in two sections to feed to the reusable Info-section module for the host page.
+    The default data fetching module for host page module component. Dummy data in three sections to feed to the reusable Info-section module for the host page.
 
 ## 15. Host Page.
-    Comprising 2 reusable sections of 2 Info-Section components with various data inputs from the host data source component.
+    Comprising 3 reusable sections of 2 Info-Section components with various data inputs from the host data source component.
     Components to showcase hotel hosting and home hosting.
+
+## 16. Form Elements.
+    Predefined elements to load into the signup package components and specific modules.
+    [
+        FormContentRight,
+        MainForm,
+        FormH1,
+        FormInputs,
+        FormLabel,
+        FormInput,
+        FormInputLogin,
+        FormContainer,
+        CloseBtn,
+        FormContentLeft,
+        FormContentResp,
+        FormImg,
+        FormImg2,
+        FormInputsP,
+        MainStyle,
+        FormSuccessH1,
+        FormInputButton
+    ]
+
+## 17. Form.
+    Main form responsive module using the state to render either the signup form or the form success page.
+
+## 18. Form Sign Up.
+    Form inputs module optimizing props to render and validate form input fields in real time.
+
+## 19. Form Success.
+    Form success page to be rendered on successfull sign up transaction.
+
+## 20. Sign Up.
+    Sign Up parent component to be rendered in the main app route for sign-up.
+
+## 21. useForm Hook.
+    Custom useForm hook using the react useState and useEffect hooks for logic and returning handleChange, handleSubmit, values and errors to be destructured from the useForm custom hook to be used in the 'Form Sign Up' module.
+
+## 22. Validate Info.
+    Signup form validation module to validate sign up form fields through props from the 'Form Sign Up' module with custom messages and predefined requirements.
 
