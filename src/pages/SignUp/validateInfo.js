@@ -1,11 +1,12 @@
 export default function validateInfo(values) {
   let errors = {};
 
-  if (!values.username.trim()) {
+  if (values.username.trim()) {
     errors.username =
       "Kanmaa Adv. requires a username to assign to your account";
-  } else if(values.username <= 3) {
-      errors.username = "Kanmaa Adv. requires a user name more than 3 characters long";
+  } else if (values.username <= 3) {
+    errors.username =
+      "Kanmaa Adv. requires a user name more than 3 characters long";
   }
   // else if (!/^[A-Za-z]+/.test(values.name.trim())) {
   // }
@@ -31,4 +32,3 @@ export default function validateInfo(values) {
   }
   return errors;
 }
-

@@ -1,7 +1,7 @@
 import SignupSvg from "../../images/SignupSvg";
 import React, { useState } from "react";
 import FormSignup from "./FormSignup";
-import FormSuccess from "./FormSuccess";
+import FormSuccess from "./FormSuccessJs";
 import {
   FormContainer,
   CloseBtn,
@@ -35,5 +35,3 @@ const Form = () => {
 };
 
 export default Form;
-
-
